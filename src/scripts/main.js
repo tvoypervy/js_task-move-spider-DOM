@@ -2,6 +2,8 @@
 
 document.addEventListener('click', (e) => {
   if (e.target.closest('.wall')) {
+    e.target.closest('.wall');
+
     const wallJ = document.querySelector('.wall');
 
     const wallWidth = wallJ.clientWidth;
