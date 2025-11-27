@@ -1,11 +1,9 @@
 'use strict';
 
 document.addEventListener('click', (e) => {
-  if (e.target.closest('.wall')) {
-    e.target.closest('.wall');
+  const wallJ = e.target.closest('.wall');
 
-    const wallJ = document.querySelector('.wall');
-
+  if (wallJ) {
     const wallWidth = wallJ.clientWidth;
     const wallHeight = wallJ.clientHeight;
     const wallRect = wallJ.getBoundingClientRect();
